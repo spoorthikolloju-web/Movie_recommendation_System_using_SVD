@@ -13,7 +13,7 @@ movie-recommendation-system/
 ├── app.py                          ← Streamlit UI (run in terminal)
 ├── README.md
 ├── RESULTS
-└──ml-100k
+└── requirements.txt
 ```
 
 ---
