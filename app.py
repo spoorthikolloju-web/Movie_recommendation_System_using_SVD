@@ -48,8 +48,9 @@ st.markdown("""
 #Load & Train (runs only once
 @st.cache_resource(show_spinner=False)
 def load_and_train():
+    print("before")
     data = Dataset.load_builtin('ml-100k')
-
+    print("after")
 # Download movie titles file
     if not os.path.exists('ml-100k/u.item'):
      url = 'https://files.grouplens.org/datasets/movielens/ml-100k.zip'
