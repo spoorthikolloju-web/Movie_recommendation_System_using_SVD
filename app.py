@@ -49,7 +49,7 @@ st.markdown("""
 @st.cache_resource(show_spinner=False)
 def load_and_train():
     print("before")
-    data = Dataset.load_builtin('ml-100k')
+    data = Dataset.load_builtin('ml-100k',prompt=False)
     print("after")
 # Download movie titles file
     if not os.path.exists('ml-100k/u.item'):
