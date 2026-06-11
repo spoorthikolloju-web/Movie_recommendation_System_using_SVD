@@ -1,5 +1,6 @@
 # 🎬 Movie Recommendation System
 ### SVD Matrix Factorization · MovieLens 100K
+Live-demo : https://your-vibe-movies-with-svd.streamlit.app/
 
 ---
 
@@ -78,3 +79,4 @@ Then it predicts ratings for movies the user hasn't seen — this is exactly how
 **Kolloju Spoorthi**  
 B.E. Computer Science — Keshav Memorial Engineering College, Hyderabad  
 GitHub: [github.com/spoorthikolloju-web](https://github.com/spoorthikolloju-web)
+
