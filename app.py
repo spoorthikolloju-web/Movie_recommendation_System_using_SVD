@@ -7,6 +7,7 @@ from surprise import Dataset, SVD, accuracy
 from surprise.model_selection import train_test_split
 import urllib.request
 import zipfile
+import os
 
 # ── Page Config ──────────────────────────────────────────────
 st.set_page_config(page_title="Movie Recommender", page_icon="🎬", layout="centered")
@@ -50,11 +51,11 @@ def load_and_train():
     data = Dataset.load_builtin('ml-100k')
 
 # Download movie titles file
+   if not os.path.exists('ml-100k/u.item'):
     url = 'https://files.grouplens.org/datasets/movielens/ml-100k.zip'
     urllib.request.urlretrieve(url, 'ml-100k.zip')
-
     with zipfile.ZipFile('ml-100k.zip', 'r') as z:
-       z.extract('ml-100k/u.item')
+        z.extract('ml-100k/u.item')
 
 # Load movie names
     movies_df = pd.read_csv(
