@@ -22,7 +22,7 @@ movie-recommendation-system/
 ### Step 1 — Install dependencies
 Open your terminal and run:
 ```bash
-pip install scikit-surprise pandas numpy matplotlib streamlit 
+pip install -r requirements.txt
 ```
 
 ---
